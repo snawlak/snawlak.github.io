@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ślub Magdy i Kuby</title>
+    <meta name="description" content="My Page Description">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+</head>
+
+<body>
+    <div class="wedding-counter">
+        <div class="container">
+            <div class="wedding-counter-box">
+                <div class="wedding-counter-title">
+                    <p>Do ślubu pozostało:</p>
+                </div>
+                <div class="wedding-counter-value">
+                    <p id="counter"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="home">
+        <div class="container">
+            <div class="main-text">
+                <h1>Magda & Kuba</h1>
+                <h3>Nie może Cię zabraknąć!</h3>
+                <!-- <a href="/auth" title="Join now">Start now</a> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="container">
+
+            <div class="info-row">
+                <div class="info-one">
+                    <h4> <img src='img/calendar.png' />09.07.2022 sobota 16:00</h4>
+                    <a href="https://goo.gl/maps/ATj38ndE9Auu4R729"></a>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-one">
+                    <h4> <img src='img/church.png' />Parafia Najśw. Serca Pana Jezusa
+                        w Starej Miłośnie</h4>
+                    <a href="https://goo.gl/maps/ATj38ndE9Auu4R729"></a>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-one">
+                    <h4> <img src='img/dance.png' /> Dom weselny "Zamkowa"</h4>
+                    <a href="https://goo.gl/maps/tapUjYaT3NKuEG8V7"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section">
+        <div id="mapid"></div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiGVb7so4MYVnTpYeeRxCmqatJt-ADqbg&callback=initMap&libraries=&v=weekly"
+        async></script> -->
+    <script src="js/main.js"></script>
+
+       
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+/* Upcoming match */
+.wedding-counter .container {
+  position: relative;
+}
+
+.wedding-counter .container .wedding-counter-box {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  padding: 15px 15px 10px 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wedding-counter .container .wedding-counter-box .wedding-counter-title {
+  margin: -15px -15px 20px -15px;
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #ffcccc;
+  color: #fff;
+}
+
+.wedding-counter .container .wedding-counter-box .wedding-counter-title p {
+  margin: 0;
+}
+
+.wedding-counter .container .wedding-counter-box .first-team, .wedding-counter .container .wedding-counter-box .second-team {
+  display: inline-block;
+}
+
+.wedding-counter .container .wedding-counter-box .wedding-counter-value {
+  display: inline-block;
+  text-align: center;
+  margin: 0 15px;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.wedding-counter .container .wedding-counter-box img {
+  height: 48px;
+  float: left;
+  margin: 0 19px 0 0;
+  font-weight: 600;
+}
+
+.wedding-counter .container .wedding-counter-box .name {
+  display: inline-block;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#home {
+  height: auto;
+  width: 100%;
+  background-image: url('../img/bg-home.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  padding: 60px;
+}
+
+#home .main-text {
+  margin: 120px 0 240px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+#home .main-text h1 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+#home .main-text h3 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+#home .main-text a {
+  display: inline-block;
+  background-color: #2ed573;
+  padding: 20px 45px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#info {
+  position: relative;
+  z-index: 3;
+  margin-top: -60px;
+}
+
+#info .info-row {
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+#info .info-one {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 2px 20px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#info .info-one h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 24px;
+}
+
+#info .info-one h4 img {
+  margin-right: 20px;
+}
+
+#info .info-one p {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+#mapid  {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
