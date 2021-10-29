@@ -1,4 +1,4 @@
-/* Upcoming match */
+/* wedding counter */
 .wedding-counter .container {
   position: relative;
 }
@@ -10,6 +10,7 @@
   padding: 15px 15px 10px 15px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  /* margin: 60px 20px; */
 }
 
 .wedding-counter .container .wedding-counter-box .wedding-counter-title {
@@ -24,6 +25,7 @@
 
 .wedding-counter .container .wedding-counter-box .wedding-counter-title p {
   margin: 0;
+  font-size: 24px;
 }
 
 .wedding-counter .container .wedding-counter-box .first-team, .wedding-counter .container .wedding-counter-box .second-team {
@@ -36,6 +38,7 @@
   margin: 0 15px;
   vertical-align: top;
   padding-top: 5px;
+  font-size: 24px;
 }
 
 .wedding-counter .container .wedding-counter-box img {
@@ -51,6 +54,7 @@
   font-weight: 600;
   margin: 0;
 }
+
 
 #home {
   height: auto;
@@ -98,20 +102,22 @@
 #info {
   position: relative;
   z-index: 3;
-  margin-top: -60px;
+  background-color: #ffcccc;
+  /* margin-top: -60px; */
 }
 
 #info .info-row {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0 0;
   width: 100%;
 }
 
 #info .info-one {
-  background-color: #fff;
+  background-color: #ffcccc;
   padding: 20px;
   margin: 0;
-  box-shadow: 0 2px 20px -10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2px 20px -10px rgba(0, 0, 0, 0.3); */
   border-radius: 5px;
+  color: #fff;
 }
 
 #info .info-one h4 {
@@ -134,8 +140,6 @@
 }
 
 #mapid  {
-  height: 400px;
-  /* The height is 400 pixels */
+  height: 600px;
   width: 100%;
-  /* The width is the width of the web page */
 }
