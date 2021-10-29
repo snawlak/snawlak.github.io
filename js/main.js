@@ -35,7 +35,6 @@ var counter = setInterval(function () {
     }).addTo(mymap);
     var weddingPlace = L.marker([52.315915,21.1942092]).addTo(mymap);
     var church = L.marker([52.2343208, 21.2064346]).addTo(mymap);
-    weddingPlace.
     weddingPlace.bindPopup("<b>Dom Weselny 'Zamkowa'</b><br>Kasprzykiewicza 81, 05-200 Leśniakowizna<br><a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'>Otwórz w Google Maps</a>").openPopup();
     church.bindPopup("<b>Parafia Najśw. Serca Pana Jezusa w Starej Miłośnie</b><br>Jana Pawła II 8/10, 05-077 Warszawa<br><a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'>Otwórz w Google Maps</a>").openPopup();
 
