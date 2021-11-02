@@ -1,13 +1,13 @@
 /* nav */
 .navbar {
-  padding: 20px !important;
+  padding: 40px !important;
 }
 .navbar .nav-link {
-  font-size: 2em !important;
+  font-size: 3em !important;
 }
 
 .navbar .navbar-toggler{
-  font-size: 2em !important;
+  font-size: 3em !important;
   margin-right: 60px !important; 
 }
 
@@ -21,7 +21,7 @@
 .wedding-counter .container .wedding-counter-box {
   position: absolute;
   right: 0;
-  background-color: #fff;
+  background-color: rgba(255, 204, 204, 0.5);
   padding: 15px 15px 10px 15px;
   border-radius: 5px;
   /* margin: 60px 20px; */
@@ -55,6 +55,7 @@
   vertical-align: top;
   padding-top: 5px;
   font-size: 24px;
+  color: #fff;
 }
 
 .wedding-counter-outer {
@@ -124,7 +125,7 @@
   font-family: 'Poppins', sans-serif;
   position: relative;
   margin-top: -50px;
-  width: 300px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -132,11 +133,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 204, 204, 0.2);
+  background-color: rgba(255, 204, 204, 0.15);
   /* opacity: 0.1; */
   display: flex;
   flex-direction: column;
-  border-bottom: 0.5rem solid rgba(255, 215, 0, 0.8);
+  border-bottom: 0.5rem solid rgba(255, 204, 204, 0.99);
   border-radius: 8px;
   /* box-shadow: 2px 3px rgb(1 1 1 / 15%); */
   backdrop-filter: blur(15px);
@@ -146,9 +147,9 @@
 
 #calendar .calendar-box .calendar-month {
   color: #fff;
-  background-color: rgba(255, 215, 0, 0.8);
+  background-color: rgba(255, 204, 204, 0.99);
   width: 100%;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   font-weight: 500;
   padding: 5px 0;
@@ -157,29 +158,29 @@
 }
 
 #calendar .calendar-box .calendar-day {
-  color: rgba(255, 215, 0, 0.8);
-  font-size: 1.2em;
+  color: rgba(255, 204, 204, 0.99);
+  font-size: 1.8em;
   font-weight: 400;
   margin-top: 20px;
 }
 
 #calendar .calendar-box .calendar-date {
-  color: rgba(255, 215, 0, 0.8);
-  font-size: 6em;
+  color: rgba(255, 204, 204, 0.99);
+  font-size: 8em;
   font-weight: 600;
   /* margin-top: 20px; */
 }
 
 #calendar .calendar-box .calendar-year {
-  color: rgba(255, 215, 0, 0.8);
-  font-size: 1.2em;
+  color: rgba(255, 204, 204, 0.99);
+  font-size: 1.8em;
   font-weight: 400;
   /* margin-top: 20px; */
 }
 
 #calendar .calendar-box .calendar-hour {
-  color: rgba(255, 215, 0, 0.8);
-  font-size: 1.2em;
+  color: rgba(255, 204, 204, 0.99);
+  font-size: 1.8em;
   font-weight: 400;
   margin-top: 10px;
 }
@@ -189,8 +190,8 @@
 }
 
 #calendar .calendar-box .google-calendar a{
-  color: rgba(255, 215, 0, 0.8);
-  font-size: 1.2em;
+  color: rgba(255, 204, 204, 0.99);
+  font-size: 1.8em;
   font-weight: 400;
 }
 
@@ -247,14 +248,14 @@
     position: relative;
     z-index: 3;
     background-color: #ffcccc;
-    /* margin-top: -60px; */
+    padding: 20px;
 }
 
 .kontakt-box {
   background-color: #ffcccc;
   width: 100%;
   color: #fff;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .kontakt-box h2 {
@@ -262,21 +263,31 @@
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   font-size: 32px;
 }
 
 .kontakt-box p {
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 1.5rem;
+  /* text-align: center; */
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 0.2rem !important;
 }
 
 .kontakt-box .phone-box {
-  margin-bottom: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  /* margin-bottom: 30px; */
+  /* text-align: center; */
   
+}
+.kontakt-box .phone-box .phone-box-label{
+  color: #fff;
+  margin: auto 10px;
+  /* vertical-align: center; */
 }
 
 .kontakt-box .phone-box p a{
