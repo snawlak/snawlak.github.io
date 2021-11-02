@@ -1,3 +1,8 @@
+/* nav */
+.nav-link {
+  font-size: 32px;
+}
+
 /* wedding counter */
 .wedding-counter .container {
   position: relative;
@@ -99,6 +104,8 @@
   text-decoration: none;
 }
 
+/* info */
+
 #info {
   position: relative;
   z-index: 3;
@@ -118,18 +125,19 @@
   /* box-shadow: 0 2px 20px -10px rgba(0, 0, 0, 0.3); */
   border-radius: 5px;
   color: #fff;
+  text-align: center;
 }
 
-#info .info-one h4 {
+#info .info-one h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  margin: 0 0 15px 0;
+  margin: 20px 0 15px 0;
   text-transform: uppercase;
-  text-align: left;
-  font-size: 24px;
+  text-align: center;
+  font-size: 32px;
 }
 
-#info .info-one h4 img {
+#info .info-one img {
   margin-right: 20px;
 }
 
@@ -143,3 +151,47 @@
   height: 600px;
   width: 100%;
 }
+
+/* kontakt */
+
+#kontakt {
+    position: relative;
+    z-index: 3;
+    background-color: #ffcccc;
+    /* margin-top: -60px; */
+}
+
+.kontakt-box {
+  background-color: #ffcccc;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+.kontakt-box h2 {
+  padding: 20px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+}
+
+.kontakt-box p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem !important;
+}
+
+.kontakt-box .phone-box {
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+
+.kontakt-box .phone-box p a{
+  color: #fff;
+}
+
+

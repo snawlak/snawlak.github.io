@@ -24,7 +24,7 @@ var counter = setInterval(function () {
 
 var center = [52.280, 21.240]
 
-var map = L.map('mapid').setView(center, 11);
+var map = L.map('mapid').setView(center, 12);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -36,6 +36,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var weddingMarker = L.marker([52.315915, 21.1942092]).addTo(map);
 var churchMarker = L.marker([52.2343208, 21.2064346]).addTo(map);
-weddingMarker.bindPopup("<b>Dom Weselny 'Zamkowa'</b><br>Kasprzykiewicza 81, 05-200 Leśniakowizna<br><a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'>Otwórz w Google Maps</a>").openPopup();
-churchMarker.bindPopup("<b>Parafia Najśw. Serca Pana Jezusa w Starej Miłośnie</b><br>Jana Pawła II 8/10, 05-077 Warszawa<br><a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'>Otwórz w Google Maps</a>").openPopup();
+var weddingPopup = "<h4><b>Dom Weselny 'Zamkowa'</b></h4>" + 
+        "<h6>Kasprzykiewicza 81, 05-200 Leśniakowizna</h6>" +
+        "<a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'><h6>Otwórz w Google Maps</h6></a>";
+var churchPopup = "<h4><b>Parafia Najśw. Serca Pana Jezusa w Starej Miłosnej</b></h4>"+
+        "<h6><br>Jana Pawła II 8/10, 05-077 Warszawa<br></h6>" +
+        "<a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'><h6>Otwórz w Google Maps</h6></a>";
+
+
+weddingMarker.bindPopup(weddingPopup).openPopup();
+churchMarker.bindPopup(churchPopup).openPopup();
 
