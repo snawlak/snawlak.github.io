@@ -1,11 +1,17 @@
 /* nav */
-.nav-link {
-  font-size: 2em;
+.navbar {
+  padding: 20px !important;
+}
+.navbar .nav-link {
+  font-size: 2em !important;
 }
 
-.navbar-toggler{
-  font-size: 2em;
+.navbar .navbar-toggler{
+  font-size: 2em !important;
+  margin-right: 60px !important; 
 }
+
+
 
 /* wedding counter */
 .wedding-counter .container {
