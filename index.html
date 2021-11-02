@@ -11,45 +11,47 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
+    <link rel="icon" href="img/wedding-couple.png">
 </head>
 
 <body>
 
-    
-    
+
+
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand brand" href="index.html">
-          <img src="img/wedding-couple.png" class="d-inline-block align-top ml-5" alt="">
+            <img src="img/wedding-couple.png" class="d-inline-block align-top ml-5" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div class="collapse navbar-collapse ml-5" id="navbarNavDropdown">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="o-nas.html" title="ONas">
-                O nas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="informacje.html" title="Informacje">
-                Informacje
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html" title="Galeria">
-                Galeria
-              </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#kontakt" title="Kontakt">
-                  Kontakt
-                </a>
-              </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="o-nas.html" title="ONas">
+                        O nas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informacje.html" title="Informacje">
+                        Informacje
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html" title="Galeria">
+                        Galeria
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt" title="Kontakt">
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
 
     <section id="home">
@@ -60,6 +62,30 @@
                         <p>Do ślubu pozostało:</p>
                     </div>
                     <div class="wedding-counter-value">
+                        <div class="wedding-counter-outer">
+                            <div class="wedding-counter-innter">
+                                <p class="wedding-counter-number" id="days"></p>
+                                <p class="wedding-counter-label">DNI</p>
+                            </div>
+                        </div>
+                        <div class="wedding-counter-outer">
+                            <div class="wedding-counter-innter">
+                                <p class="wedding-counter-number" id="hours"></p>
+                                <p class="wedding-counter-label">GODZ.</p>
+                            </div>
+                        </div>
+                        <div class="wedding-counter-outer">
+                            <div class="wedding-counter-innter">
+                                <p class="wedding-counter-number" id="minutes"></p>
+                                <p class="wedding-counter-label">MIN.</p>
+                            </div>
+                        </div>
+                        <div class="wedding-counter-outer">
+                            <div class="wedding-counter-innter">
+                                <p class="wedding-counter-number" id="seconds"></p>
+                                <p class="wedding-counter-label">SEK.</p>
+                            </div>
+                        </div>
                         <p id="counter"></p>
                     </div>
                 </div>
@@ -74,56 +100,56 @@
         </div>
     </section>
 
-    <section id="info">
+    <section id="calendar">
         <div class="container">
-          <div class="info-row">
-            <div class="info-one">
-              <img src='img/calendar-w.png' />
-              <h2> 09.07.2022 sobota 16:00</h2>
+            <div class="calendar-box">
+                <div class="calendar-month">
+                    Lipiec
+                </div>
+                <div class="calendar-day">
+                    Sobota
+                </div>
+                <div class="calendar-date">
+                    09
+                </div>
+                <div class="calendar-year">
+                    2022
+                </div>
+                <div class="calendar-hour">
+                    16:00
+                </div>
+                <div class="google-calendar">
+                    <a href="http://www.google.com/calendar/render?action=TEMPLATE&text=Ślub+Madzi+Kuby&dates=20220709T16000CET/20220710T05000CET&details=Ślub+i+Wesele+Madzi+Kuby&location=Borkowska+1,+05-077+Warszawa&trp=false&sprop=&sprop=name:"
+                        target="_blank" rel="nofollow">Dodaj do Kalendarza Google</a>
+                </div>
             </div>
-          </div>
-    
-          <div class="info-row">
-            <div class="info-one">
-              <img src='img/church-w.png' />
-              <h2> Parafia Najśw. Serca Pana Jezusa w Starej Miłośnie</h2>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-one">
-              <img src='img/dance-w.png' />
-              <h2> Dom weselny "Zamkowa"</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    </section>
     <section id="map-section">
         <div id="mapid"></div>
     </section>
 
     <section id="kontakt">
         <div class="container">
-          <div class="kontakt-box">
-            <h2>Kontakt</h2>
-            <p>Bardzo prosimy o potwierdzenie obecności do końca maja.</p>
-            <P>W razie jakichkolwiek pytań - zadzwoń</P>
-            <br>
-            <div class="phone-box">
-              
-                <img src="img/bride.png" alt="">
-                <p>Magdalena Tobiasz</p>
-                <p><a href="tel:+48603189169">+48 603 189 169</a></p>
-              <br>
-                <img src="img/groom.png" alt="">
-                <p>Jakub Pawlak</p>
-                <p><a href="tel:+48791715666">+48 791 715 666</a></p>
-              
+            <div class="kontakt-box">
+                <h2>Kontakt</h2>
+                <p>Bardzo prosimy o potwierdzenie obecności do końca maja.</p>
+                <P>W razie jakichkolwiek pytań - zadzwoń</P>
+                <br>
+                <div class="phone-box">
+
+                    <img src="img/bride.png" alt="">
+                    <p>Magdalena Tobiasz</p>
+                    <p><a href="tel:+48603189169">+48 603 189 169</a></p>
+                    <br>
+                    <img src="img/groom.png" alt="">
+                    <p>Jakub Pawlak</p>
+                    <p><a href="tel:+48791715666">+48 791 715 666</a></p>
+
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    
+    </section>
+
 
 
 

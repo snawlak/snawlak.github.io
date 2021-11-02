@@ -1,6 +1,10 @@
 /* nav */
 .nav-link {
-  font-size: 32px;
+  font-size: 2em;
+}
+
+.navbar-toggler{
+  font-size: 2em;
 }
 
 /* wedding counter */
@@ -13,8 +17,7 @@
   right: 0;
   background-color: #fff;
   padding: 15px 15px 10px 15px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   /* margin: 60px 20px; */
 }
 
@@ -26,6 +29,8 @@
   font-weight: 600;
   background-color: #ffcccc;
   color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .wedding-counter .container .wedding-counter-box .wedding-counter-title p {
@@ -46,20 +51,24 @@
   font-size: 24px;
 }
 
-.wedding-counter .container .wedding-counter-box img {
-  height: 48px;
-  float: left;
-  margin: 0 19px 0 0;
-  font-weight: 600;
-}
-
-.wedding-counter .container .wedding-counter-box .name {
+.wedding-counter-outer {
   display: inline-block;
-  line-height: 48px;
-  font-weight: 600;
-  margin: 0;
+  margin: 0px 10px;
+  text-align: center;
+  font-weight: 700;
 }
 
+.wedding-counter-label {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.wedding-counter-number {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
 
 #home {
   height: auto;
@@ -104,8 +113,82 @@
   text-decoration: none;
 }
 
-/* info */
+/* calendar card */
+#calendar {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  margin-top: -50px;
+  width: 300px;
+  margin: 0 auto;
+}
 
+#calendar .calendar-box {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 204, 204, 0.2);
+  /* opacity: 0.1; */
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5rem solid rgba(255, 215, 0, 0.8);
+  border-radius: 8px;
+  /* box-shadow: 2px 3px rgb(1 1 1 / 15%); */
+  backdrop-filter: blur(15px);
+  /* width: auto; */
+  margin: -40px auto 0 auto;
+}
+
+#calendar .calendar-box .calendar-month {
+  color: #fff;
+  background-color: rgba(255, 215, 0, 0.8);
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+#calendar .calendar-box .calendar-day {
+  color: rgba(255, 215, 0, 0.8);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+#calendar .calendar-box .calendar-date {
+  color: rgba(255, 215, 0, 0.8);
+  font-size: 6em;
+  font-weight: 600;
+  /* margin-top: 20px; */
+}
+
+#calendar .calendar-box .calendar-year {
+  color: rgba(255, 215, 0, 0.8);
+  font-size: 1.2em;
+  font-weight: 400;
+  /* margin-top: 20px; */
+}
+
+#calendar .calendar-box .calendar-hour {
+  color: rgba(255, 215, 0, 0.8);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#calendar .calendar-box .google-calendar {
+  margin: 10px auto;
+}
+
+#calendar .calendar-box .google-calendar a{
+  color: rgba(255, 215, 0, 0.8);
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* info */
 #info {
   position: relative;
   z-index: 3;
