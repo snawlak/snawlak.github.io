@@ -77,3 +77,5 @@ function toggleGallery() {
         x.style.display = "none";
     }
 }
+
+document.getElementById("test").innerHTML = $(window).width();
