@@ -1,4 +1,8 @@
 /* nav */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .navbar {
   padding: 40px !important;
 }
@@ -339,6 +343,33 @@
 
 #gallery{
   /* display: none; */
+  font-family: 'Lato', sans-serif;
+  margin: 20px;
+  
+}
+
+#photo-list {
+  text-align: center;
+}
+
+#photo-list .photo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#photo-list .photo-list li {
+  /* margin: 10px; */
+  margin: 10px 0;
+}
+
+#photo-list .photo-list li button {
+  border: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+#photo-list .photo-list li img {
+  border-radius: 8px;
 }
 
 
