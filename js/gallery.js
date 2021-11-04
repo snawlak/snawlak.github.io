@@ -62,6 +62,9 @@ function initGallery(src) {
         index: startIndex // start at first slide
     };
 
+    console.log(src);
+    console.log(startIndex);
+
     // Initializes and opens PhotoSwipe
     var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
     gallery.init();
