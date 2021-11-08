@@ -4,35 +4,38 @@ body {
 }
 
 .navbar {
-  padding: 40px !important;
-}
-.navbar .nav-link {
-  font-size: 3em !important;
+  padding: 1em 1.4em !important;
 }
 
-.navbar .navbar-toggler{
-  font-size: 3em !important;
-  margin-right: 60px !important; 
+.navbar .nav-link {
+  font-size: 2em !important;
 }
 
 /* wedding counter */
+.wedding-counter {
+  padding: 2em 0 0 0;
+}
+
 .wedding-counter .container {
-  position: relative;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .wedding-counter .container .wedding-counter-box {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   background-color: rgba(255, 204, 204, 0.5);
-  padding: 15px 15px 10px 15px;
   border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
   /* margin: 60px 20px; */
 }
 
 .wedding-counter .container .wedding-counter-box .wedding-counter-title {
-  margin: -15px -15px 20px -15px;
+  margin: -15px 0px  20px 0px;
   text-align: center;
-  padding: 5px;
+  padding: 0.6em;
   text-transform: uppercase;
   font-weight: 600;
   background-color: #ffcccc;
@@ -46,16 +49,10 @@ body {
   font-size: 24px;
 }
 
-.wedding-counter .container .wedding-counter-box .first-team, .wedding-counter .container .wedding-counter-box .second-team {
-  display: inline-block;
-}
-
 .wedding-counter .container .wedding-counter-box .wedding-counter-value {
-  display: inline-block;
   text-align: center;
-  margin: 0 15px;
   vertical-align: top;
-  padding-top: 5px;
+  padding: 1em auto;
   font-size: 24px;
   color: #fff;
 }
@@ -86,18 +83,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  padding: 60px;
+  padding: 2em 0;
 }
 
 #home .main-text {
-  margin: 120px 0 240px 0;
+  margin: 0 auto 16em auto;
   font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
 #home .main-text h1 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 48px;
+  font-size: 2.5em;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 0 10px 0;
@@ -106,8 +104,8 @@ body {
 #home .main-text h3 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 1.6em;
+  font-weight: 400;
   margin-bottom: 45px;
 }
 

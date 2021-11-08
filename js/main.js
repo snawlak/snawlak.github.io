@@ -11,11 +11,10 @@ var counter = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("days").innerHTML = getWithZero(days);
+    document.getElementById("hours").innerHTML = getWithZero(hours);
+    document.getElementById("minutes").innerHTML = getWithZero(minutes);
+    document.getElementById("seconds").innerHTML =  getWithZero(seconds);
 
     if (distance < 0) {
         clearInterval(counter);
@@ -49,4 +48,8 @@ var churchPopup = "<h4><b>Parafia Najśw. Serca Pana Jezusa w Starej Miłosnej</
 
 weddingMarker.bindPopup(weddingPopup).openPopup();
 churchMarker.bindPopup(churchPopup).openPopup();
+
+function getWithZero(value) {
+    return value < 10 ? "0" + value : value
+}
 
