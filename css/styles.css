@@ -125,7 +125,7 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   margin-top: -50px;
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto;
 }
 
@@ -143,6 +143,7 @@ body {
   backdrop-filter: blur(15px);
   /* width: auto; */
   margin: -40px auto 0 auto;
+  box-shadow: 0 0 1em rgb(158, 158, 157);
 }
 
 #calendar .calendar-box .calendar-month {
@@ -187,12 +188,16 @@ body {
 
 #calendar .calendar-box .google-calendar {
   margin: 10px auto;
+  background-color: #ffcccc;
+  border-radius: 8px;
+  padding: 0.5em 1em
 }
 
 #calendar .calendar-box .google-calendar a{
-  color: rgba(255, 204, 204, 0.99);
+  color: #fff;
+  text-decoration: none;
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* info */
@@ -297,41 +302,50 @@ body {
 /* gallery  */
 #add-photo{
   background-color: #f2f2f2;
-  padding: 50px;
+  padding: 0.6em;
 }
 
 #add-photo .add-photo-box {
   background-color: #fff;
   box-shadow: 0 0 1em rgb(158, 158, 157);
-  margin: 10px auto;
-  text-align: center;
-  padding: 25px;
-  max-width: 90%;
+  margin: 1em auto;
+  padding: 0.8em;
   border-radius: 8px;
+  text-align: center;
 }
 
 #add-photo .add-photo-box h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+  margin-top: 0.8em;
+  float: left;
+  text-align: left;
 }
 
 #add-photo .add-photo-box p {
   font-family: 'Lato', sans-serif;
-  font-size: 2em;
+  font-size: 1.4em;
+  float: left;
+  text-align: left;
 }
 
 #add-photo .add-photo-box .add-button {
   font-family: 'Lato', sans-serif;
-  font-size: 2em;
-  padding: 20px 40px;
+  font-size: 1.8em;
+  padding: 0.6em 1em;
+  font-weight: 500;
   background-color: #ffcccc;
   color: #fff;
   border-radius: 8px;
   border: none;
+  margin-top: 1em;
   /* box-shadow: yellow; */
   /* box-shadow: 0 0 1em gold; */
+  justify-content: center;
+  text-align: center;
+  margin: 1em auto 0.5em auto;
 }
 
 #add-photo .add-photo-box .add-button:hover {
@@ -348,6 +362,13 @@ body {
 
 #photo-list {
   text-align: center;
+}
+
+#photo-list h1 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 1em auto;
 }
 
 #photo-list .photo-list {
