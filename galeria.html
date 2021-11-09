@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="utf-8">
@@ -20,40 +20,40 @@
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/wedding-couple.png" class="d-inline-block align-top ml-5" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="o-nas.html" title="ONas">
-                        O nas
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="informacje.html" title="Informacje">
-                        Informacje
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html" title="Galeria">
-                        Galeria
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="informacje.html#kontakt" title="Kontakt">
-                        Kontakt
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/wedding-couple.png" class="d-inline-block align-top ml-5" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="o-nas.html" title="ONas">
+              O nas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="informacje.html" title="Informacje">
+              Informacje
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html" title="Galeria">
+              Galeria
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="informacje.html#kontakt" title="Kontakt">
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-</nav>
+  </nav>
 
   <section id="add-photo">
     <div class="container">
@@ -61,7 +61,7 @@
         <h1>Dodaj zdjęcie</h1>
         <p>Baw się razem z nami!</p>
         <p>Wybierz Twoje wyjątkowe zdjęcia ze ślubu i wesela. Dodaj je tutaj i przeglądaj</p>
-        <button class="add-button">Dodaj zdjęcia</button>
+        <button class="add-button" onclick="showPopup()">Dodaj zdjęcia</button>
       </div>
     </div>
   </section>
@@ -106,53 +106,93 @@
     </div>
   </section>
 
+  <section id="add-photo-popup">
+    <div class="container">
+      <div class="popup col-sm-10 col-md-8 col-12 col-lg-4">
+        <div class="popup-content" id="popup-content">
+          <h2>Dodaj zdjęcia</h2>
+          <p>Przy dodawaniu staraj się dodać zdjęcie z jednej kategorii (ślub lub wesele). Zaznacz odpowiedni box.
+            Pozwoli to nam lepiej posortować zdjęcia</p>
+          <form onsubmit="return false;">
+            <label class="check-box">Ślub
+              <input type="radio" checked="checked" name="type" value="marriage" id="marriage">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-box">Wesele
+              <input type="radio" checked="checked" name="type" value="wedding" id="wedding">
+              <span class="checkmark"></span>
+            </label>
+            <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg" multiple="multiple"
+              class="attach-files">
+            <input type="submit" value="Wyślij" class="send-button" onclick="sendImages()">
+          </form>
+        </div>
+        <div class="files-loading" id="files-loading">
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="files-sent" id="files-sent">
+          <h2>Dziękujemy</h2>
+          <svg class="checkstatus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkstatus__circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkstatus__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>        
+      </div>
+    </div>
+  </section>
+
   <section id="photo-list">
     <div class="container">
       <h1>Galeria</h1>
       <ul class="row photo-list">
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/bg-home.jpg')">
-            <img  src="img/bg-home.jpg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/bg-home.jpg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/1.jpeg')">
-            <img  src="img/gallery/1.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/1.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/2.jpeg')">
-            <img  src="img/gallery/2.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/2.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/3.jpeg')">
-            <img  src="img/gallery/3.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/3.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/4.jpeg')">
-            <img  src="img/gallery/4.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/4.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/5.jpeg')">
-            <img  src="img/gallery/5.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/5.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/6.jpeg')">
-            <img  src="img/gallery/6.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/6.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/7.jpeg')">
-            <img  src="img/gallery/7.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/7.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
         <li class="col-md-2 col-sm-4 col-6">
           <button onclick="initGallery('img/gallery/8.jpeg')">
-            <img  src="img/gallery/8.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
+            <img src="img/gallery/8.jpeg" alt="team-pick-img" style="width: 100%; height: auto;">
           </button>
         </li>
       </ul>
@@ -173,7 +213,7 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="js/photoswipe/photoswipe-ui-default.min.js"></script>
