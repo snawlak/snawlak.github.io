@@ -3,6 +3,20 @@
     height: 800px;
 }
 
+#our-history h3 {
+    margin: 1em auto;
+}
+
+#our-history h3 {
+    margin: 1em auto;
+    font-family: 'Sofia';
+    font-weight: 500;
+}
+
+#our-history h3 {
+    margin: 1em auto;
+}
+
 .city-container {
     padding: 1em auto;
     margin-top: 1em;
@@ -14,10 +28,11 @@
 
 .city-container .city-img {
     width: 100%;
+    max-width: 272px;
     height: auto;
     border-radius: 8px;
 }
 
 .city-container .city-description {
-
+    max-width: 272px;
 }

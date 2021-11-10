@@ -1,4 +1,4 @@
-var center = [52.280, 21.240];
+var center = [25.1164147, 5.8792051];
 var chamrousse = [45.1164147, 5.8792051];
 var wellington = [-41.2528099,174.6842183];
 var jantar = [54.3441751,19.0366343];
@@ -26,23 +26,143 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoic25hd2xhayIsImEiOiJja3ZjNHN0ZzIzcGVjMnJscHkzc2Rjc2x5In0.SQhNS-a2oX7rIT6Ers9-hQ'
 }).addTo(map);
 
-var chamrousseMarker = L.marker(chamrousse).addTo(map);
-var wellingtonMarker = L.marker(wellington).addTo(map);
-var jantarMarker = L.marker(jantar).addTo(map);
-var singapurMarker = L.marker(singapur).addTo(map);
-var malezjaMarker = L.marker(malezja).addTo(map);
-var tajwanMarker = L.marker(tajwan).addTo(map);
-var pekinMarker = L.marker(pekin).addTo(map);
-var dohaMarker = L.marker(doha).addTo(map);
-var malmoMarker = L.marker(malmo).addTo(map);
-var maltaMarker = L.marker(malta).addTo(map);
-var grecjaMarker = L.marker(grecja).addTo(map);
-var austriaMarker = L.marker(austria).addTo(map);
-var dreznoMarker = L.marker(drezno).addTo(map);
-var veneziaMarker = L.marker(venezia).addTo(map);
-var krakowMarker = L.marker(krakow).addTo(map);
+var chamrousseMarker = L.marker(chamrousse).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var wellingtonMarker = L.marker(wellington).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var jantarMarker = L.marker(jantar).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var singapurMarker = L.marker(singapur).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var malezjaMarker = L.marker(malezja).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var tajwanMarker = L.marker(tajwan).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var pekinMarker = L.marker(pekin).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var dohaMarker = L.marker(doha).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var malmoMarker = L.marker(malmo).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var maltaMarker = L.marker(malta).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var grecjaMarker = L.marker(grecja).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var austriaMarker = L.marker(austria).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var dreznoMarker = L.marker(drezno).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var veneziaMarker = L.marker(venezia).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var krakowMarker = L.marker(krakow).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
 
-var veneziaPopup =  "<div class='city-container'>"+
+var chamroussePopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Chamrousse"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var wellingtonPopup = "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Wellington"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var jantarPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Jantar"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var singapurPopup =    "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Singapur"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+
+var malezjaPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Malezja"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var tajwanPopup =    "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Tajwan"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var pekinPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Pekin"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var dohaPopup =    "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Doha"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+
+var malmoPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Malmo"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var maltaPopup =    "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Malta"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var grecjaPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Grecja"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var austriaPopup =    "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Austria"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+
+var dreznoPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Drezno"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
+var veneziaPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Wenecja"+    
                     "   </h3>"+
@@ -51,9 +171,9 @@ var veneziaPopup =  "<div class='city-container'>"+
                     "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
                     "   </p>"+
                     "</div>";
-var malmoPopup =    "<div class='city-container'>"+
+var krakowPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
-                    "       Wenecja"+    
+                    "       Kraków"+    
                     "   </h3>"+
                     "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
                     "   <p class='city-description'>"+
@@ -61,7 +181,22 @@ var malmoPopup =    "<div class='city-container'>"+
                     "   </p>"+
                     "</div>";
 
+chamrousseMarker.bindPopup(chamroussePopup).openPopup();
+wellingtonMarker.bindPopup(wellingtonPopup);
+jantarMarker.bindPopup(jantarPopup);
+singapurMarker.bindPopup(singapurPopup);
+malezjaMarker.bindPopup(malezjaPopup);
+tajwanMarker.bindPopup(tajwanPopup);
+pekinMarker.bindPopup(pekinPopup);
+dohaMarker.bindPopup(dohaPopup);
+malmoMarker.bindPopup(malmoPopup);
+maltaMarker.bindPopup(maltaPopup);
+grecjaMarker.bindPopup(grecjaPopup);
+austriaMarker.bindPopup(austriaPopup);
+dreznoMarker.bindPopup(dreznoPopup);
+veneziaMarker.bindPopup(veneziaPopup);
+krakowMarker.bindPopup(krakowPopup);
 
 
-veneziaMarker.bindPopup(veneziaPopup).openPopup();
-malmoMarker.bindPopup(malmoPopup).openPopup();
+
+//map.panTo(new L.LatLng(40.737, -73.923));
