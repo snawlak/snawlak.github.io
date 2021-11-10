@@ -14,6 +14,7 @@ var austria = [48.220778,16.3100205];
 var drezno = [51.0769658,13.6325041];
 var venezia = [45.4046987,12.2472506];
 var krakow = [50.0468548,19.9348337];
+var barcelona = [41.3926467,2.0701495];
 
 
 var map = L.map('map-about-us').setView(center, 3);
@@ -41,6 +42,7 @@ var austriaMarker = L.marker(austria).addTo(map).on('click', function(e) {map.pa
 var dreznoMarker = L.marker(drezno).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
 var veneziaMarker = L.marker(venezia).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
 var krakowMarker = L.marker(krakow).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
+var barcelonaMarker = L.marker(barcelona).addTo(map).on('click', function(e) {map.panTo(new L.LatLng(e.latlng.lat - 20, e.latlng.lng));});
 
 var chamroussePopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
@@ -180,6 +182,15 @@ var krakowPopup =  "<div class='city-container'>"+
                     "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
                     "   </p>"+
                     "</div>";
+var barcelonaPopup =  "<div class='city-container'>"+
+                    "   <h3 class='city-name'>"+
+                    "       Kraków"+    
+                    "   </h3>"+
+                    "   <img src='img/gallery/6.jpeg' alt='venezia' class='city-img'>"+
+                    "   <p class='city-description'>"+
+                    "   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"+
+                    "   </p>"+
+                    "</div>";
 
 chamrousseMarker.bindPopup(chamroussePopup).openPopup();
 wellingtonMarker.bindPopup(wellingtonPopup);
@@ -196,6 +207,7 @@ austriaMarker.bindPopup(austriaPopup);
 dreznoMarker.bindPopup(dreznoPopup);
 veneziaMarker.bindPopup(veneziaPopup);
 krakowMarker.bindPopup(krakowPopup);
+barcelonaMarker.bindPopup(barcelonaPopup);
 
 
 
