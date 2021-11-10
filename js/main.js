@@ -20,8 +20,6 @@ var counter = setInterval(function () {
         clearInterval(counter);
         document.getElementById("counter").innerHTML = "JUST MARRIED";
     }
-
-
 }, 1000);
 
 var center = [52.280, 21.240]

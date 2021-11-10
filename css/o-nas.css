@@ -1,0 +1,23 @@
+#map-about-us  {
+    width: 100%;
+    height: 800px;
+}
+
+.city-container {
+    padding: 1em auto;
+    margin-top: 1em;
+}
+
+.city-container .city-name {
+    font-weight: 600;
+}
+
+.city-container .city-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.city-container .city-description {
+
+}
