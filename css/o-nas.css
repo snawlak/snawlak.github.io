@@ -3,13 +3,26 @@
     height: 800px;
 }
 
+#our-history {
+    background-color: #f2f2f2;
+    padding: 0.6em;
+}
+
+#our-history .container {
+    box-shadow: 0 0 1em rgb(158, 158, 157);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1em 1em;
+    /* margin: 2em auto; */
+}
+
 #our-history h3 {
     margin: 1em auto;
 }
 
 #our-history h3 {
     margin: 1em auto;
-    font-family: 'Sofia';
+    font-family: 'Allura';
     font-weight: 500;
 }
 
