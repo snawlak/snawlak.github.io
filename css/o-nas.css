@@ -33,6 +33,7 @@
 .city-container {
     padding: 1em auto;
     margin-top: 1em;
+    min-width: 300px;
 }
 
 .city-container .city-name {
