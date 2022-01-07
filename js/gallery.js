@@ -1,60 +1,57 @@
 var canClosePopup = false;
 
+
+var images = [];
+var imgItems = [];
+$.ajax({
+    url: 'http://localhost/wedding/test.php',
+    success: function(data) {
+        console.log(data);
+        if(data != "") {
+            images = data.split(";");
+            images.pop(0);
+            console.log(images.length);
+            init(images);
+        }
+        
+    }
+  });
+
+  function init(images) {
+     
+        var galleryList = document.getElementById("gallery-list");
+        for(const image of images) {
+            var imageUrl = "http://localhost/wedding/" + image;
+            console.log(imageUrl);
+            var initGalleryStr = `initGallery('${imageUrl}')`;
+            galleryList.insertAdjacentHTML("afterbegin", 
+            "<li class='col-md-2 col-sm-4 col-6'>" + 
+            `<button onclick="initGallery('${imageUrl}')">` + 
+            `<img src='${imageUrl}' alt='team-pick-img' style='width: 100%; height: auto;'>` + 
+            "</button>" +
+            "</li>" 
+            )
+
+            imgItems.push({
+                src: imageUrl,
+                w: 1200,
+                h: 900
+            });
+        }
+  }
+
+
+
+
+
 function initGallery(src) {
     var pswpElement = document.querySelectorAll('.pswp')[0];
 
-    // build items array
-    var items = [
-        {
-            src: 'img/bg-home.jpg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/1.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/2.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/3.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/4.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/5.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/6.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/7.jpeg',
-            w: 1200,
-            h: 900
-        },
-        {
-            src: 'img/gallery/8.jpeg',
-            w: 1200,
-            h: 900
-        },
-    ];
+    
 
     var startIndex = 0;
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].src === src) {
+    for (var i = 0; i < imgItems.length; i++) {
+        if (imgItems[i].src === src) {
             startIndex = i;
             break;
         }
@@ -68,7 +65,7 @@ function initGallery(src) {
     console.log(startIndex);
 
     // Initializes and opens PhotoSwipe
-    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgItems, options);
     gallery.init();
 
 }
@@ -123,3 +120,25 @@ function sendImages() {
         filesSent.style.display = 'block';
     }, 3000);
 }
+
+
+// $(function() {
+//     $('#pic-form').submit(function(event) {
+//         event.preventDefault();
+//         $(this).submit();
+//         }); 
+//     });
+
+// $('#pic-form').submit(function(e) {
+//     console.log($('#pic-form').serialize())
+//     e.preventDefault();
+//     $.ajax({
+//          type: 'POST',
+//          url: 'http://localhost/wedding/send-img.php',
+//          data: new FormData( this ),
+//          success: function(date) {
+//              console.log(date);
+//          }
+         
+//     }); 
+//  })
