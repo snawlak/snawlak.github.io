@@ -4,7 +4,7 @@ var canClosePopup = false;
 var images = [];
 var imgItems = [];
 $.ajax({
-    url: 'http://localhost/wedding/test.php',
+    url: 'http://slubmagdyikuby.pl/test.php',
     success: function(data) {
         console.log(data);
         if(data != "") {
@@ -21,7 +21,7 @@ $.ajax({
      
         var galleryList = document.getElementById("gallery-list");
         for(const image of images) {
-            var imageUrl = "http://localhost/wedding/" + image;
+            var imageUrl = "http://slubmagdyikuby.pl/" + image;
             console.log(imageUrl);
             var initGalleryStr = `initGallery('${imageUrl}')`;
             galleryList.insertAdjacentHTML("afterbegin", 
@@ -114,31 +114,22 @@ function sendImages() {
     var filesSent = document.getElementById('files-sent')
     popup.style.display = 'none';
     loading.style.display = 'block';
-    setTimeout(function () {
-        loading.style.display = 'none';
-        popup.style.display = 'none';
-        filesSent.style.display = 'block';
-    }, 3000);
+    // setTimeout(function () {
+    //     loading.style.display = 'none';
+    //     popup.style.display = 'none';
+    //     filesSent.style.display = 'block';
+    // }, 3000);
 }
 
+if (window.location.search.includes("succes=true")) {
 
-// $(function() {
-//     $('#pic-form').submit(function(event) {
-//         event.preventDefault();
-//         $(this).submit();
-//         }); 
-//     });
-
-// $('#pic-form').submit(function(e) {
-//     console.log($('#pic-form').serialize())
-//     e.preventDefault();
-//     $.ajax({
-//          type: 'POST',
-//          url: 'http://localhost/wedding/send-img.php',
-//          data: new FormData( this ),
-//          success: function(date) {
-//              console.log(date);
-//          }
-         
-//     }); 
-//  })
+    var popup = document.getElementById('popup-content')
+    var loading = document.getElementById('files-loading')
+    var filesSent = document.getElementById('files-sent')
+    var section = document.getElementById("add-photo-popup");
+    section.style.display = "flex";
+    loading.style.display = 'none';
+    popup.style.display = 'none';
+    filesSent.style.display = 'block';
+    canClosePopup = true;
+}
