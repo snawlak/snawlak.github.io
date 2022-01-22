@@ -6,50 +6,55 @@ var imgItems = [];
 $.ajax({
     url: 'http://slubmagdyikuby.pl/test.php',
     success: function(data) {
-        console.log(data);
         if(data != "") {
             images = data.split(";");
             images.pop(0);
-            console.log(images.length);
+            console.log(images);
             init(images);
         }
         
     }
   });
 
-  function init(images) {
-     
-        var galleryList = document.getElementById("gallery-list");
-        for(const image of images) {
-            var imageUrl = "http://slubmagdyikuby.pl/" + image;
-            console.log(imageUrl);
-            var initGalleryStr = `initGallery('${imageUrl}')`;
-            galleryList.insertAdjacentHTML("afterbegin", 
-            "<li class='col-md-2 col-sm-4 col-6'>" + 
-            `<button onclick="initGallery('${imageUrl}')">` + 
-            `<img src='${imageUrl}' alt='team-pick-img' style='width: 100%; height: auto;'>` + 
-            "</button>" +
-            "</li>" 
-            )
+function init(images) {
 
+    var galleryList = document.getElementById("gallery-list");
+    console.log(images)
+    for (let image of images) {
+        var imageUrl = "http://slubmagdyikuby.pl/" + image;
+        console.log(imageUrl);
+
+        galleryList.insertAdjacentHTML("beforeend",
+            "<li class='col-md-2 col-sm-4 col-6'>" +
+            `<button onclick="initGallery('${imageUrl}')">` +
+            `<img src='${imageUrl}' alt='team-pick-img' style='width: 100%; height: auto;'>` +
+            "</button>" +
+            "</li>"
+        )
+        let img = new Image();
+        img.src = imageUrl;
+        img.onload = async function () {
+            console.log(this.src);
             imgItems.push({
-                src: imageUrl,
-                w: 1200,
-                h: 900
+                src: this.src,
+                w: this.width,
+                h: this.height
             });
         }
-  }
+
+
+    }
+}
 
 
 
 
 
 function initGallery(src) {
+    console.log(imgItems.map(a => a.src))
     var pswpElement = document.querySelectorAll('.pswp')[0];
-
-    
-
     var startIndex = 0;
+    imgItems = imgItems.sort((a, b) => a.src.localeCompare(b.src));
     for (var i = 0; i < imgItems.length; i++) {
         if (imgItems[i].src === src) {
             startIndex = i;
@@ -61,8 +66,7 @@ function initGallery(src) {
         index: startIndex // start at first slide
     };
 
-    console.log(src);
-    console.log(startIndex);
+
 
     // Initializes and opens PhotoSwipe
     var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgItems, options);
@@ -114,11 +118,6 @@ function sendImages() {
     var filesSent = document.getElementById('files-sent')
     popup.style.display = 'none';
     loading.style.display = 'block';
-    // setTimeout(function () {
-    //     loading.style.display = 'none';
-    //     popup.style.display = 'none';
-    //     filesSent.style.display = 'block';
-    // }, 3000);
 }
 
 if (window.location.search.includes("succes=true")) {
