@@ -8,7 +8,7 @@ body {
 }
 
 .navbar .nav-link {
-  font-size: 2em !important;
+  font-size: 1.6em !important;
 }
 
 /* wedding counter */
@@ -215,68 +215,71 @@ body {
 
 #info .info-one {
   background-color: #ffcccc;
-  padding: 20px;
-  margin: 0;
-  /* box-shadow: 0 2px 20px -10px rgba(0, 0, 0, 0.3); */
-  border-radius: 5px;
+  margin-top: 2em;
   color: #fff;
   text-align: center;
+  align-items: center;
 }
 
 #info .info-one h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  margin: 20px 0 15px 0;
+  /* margin: 20px 0 15px 0; */
   text-transform: uppercase;
+  font-size: 1.6em;
   text-align: center;
-  font-size: 32px;
 }
 
 #info .info-one img {
   margin-right: 20px;
+  padding: 0.5em;
+  max-width: 60%;
 }
 
 #info .info-one p {
   margin: 0;
-  text-align: center;
-  font-size: 24px;
+  font-size: 1.2em;
 }
 
 #mapid  {
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
 
 /* kontakt */
 
+
+
 #kontakt {
     position: relative;
     z-index: 3;
-    background-color: #ffcccc;
-    padding: 20px;
+    background-color: rgba(255, 204, 204, 0.15);
+    /* padding: 20px; */
+}
+
+#kontakt h1 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 1em auto;
+  text-transform: uppercase;
 }
 
 .kontakt-box {
-  background-color: #ffcccc;
+  /* background-color: rgba(255, 204, 204, 0.15); */
   width: 100%;
-  color: #fff;
+  color: #fdb3b3;
+ 
   /* padding: 10px; */
 }
 
-.kontakt-box h2 {
-  padding: 20px 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  /* text-align: center; */
-  font-size: 32px;
-}
+
 
 .kontakt-box p {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   /* text-align: center; */
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 0.2rem !important;
 }
@@ -284,19 +287,20 @@ body {
 .kontakt-box .phone-box {
   display: flex;
   align-items: center;
-  margin: 20px auto;
+  margin: 1em auto;
+  /* margin: 20px auto; */
   /* margin-bottom: 30px; */
   /* text-align: center; */
   
 }
 .kontakt-box .phone-box .phone-box-label{
-  color: #fff;
+  color: #fdb3b3;
   margin: auto 10px;
   /* vertical-align: center; */
 }
 
 .kontakt-box .phone-box p a{
-  color: #fff;
+  color: #fdb3b3;
 }
 
 /* gallery  */
@@ -545,6 +549,40 @@ body {
   font-weight: 600;
 }
 
+#other-info {
+  background-image: url('../img/map-pic.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 100%;
+  height: 300px;
+  padding: auto 20em;
+}
+
+#other-info .container {
+  height: 100%;
+}
+
+#other-info .other-info-details {
+  padding: 2em;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+#other-info .other-info-details img {
+  /* padding: 2em; */
+  max-height: 160px;
+}
+
+#other-info .other-info-details .flower {
+  margin-right: -2em;
+}
+
+#other-info .other-info-details .wine {
+  margin-left: -2em;
+}
+
 .lds-ring {
   display: inline-block;
   position: relative;
@@ -631,10 +669,3 @@ body {
     box-shadow: inset 0px 0px 0px 30px #7ac142;
   }
 }
-
-
-
-
-
-
-

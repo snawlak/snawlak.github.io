@@ -46,10 +46,6 @@ function init(images) {
     }
 }
 
-
-
-
-
 function initGallery(src) {
     console.log(imgItems.map(a => a.src))
     var pswpElement = document.querySelectorAll('.pswp')[0];

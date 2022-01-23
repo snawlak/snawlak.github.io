@@ -1,4 +1,4 @@
-var center = [15.1164147, 5.8792051];
+var center = [-5.1164147, 35.8792051];
 var francja = [45.1164147, 5.8792051];
 var newZealand = [-41.2528099,174.6842183];
 var poland = [54.3441751,19.0366343];
@@ -20,7 +20,7 @@ var czechy = [49.8001306,14.3539628];
 var dania = [55.6711876,12.4537421];
 
 
-var map = L.map('map-about-us').setView(center, 3);
+var map = L.map('map-about-us', { dragging: !L.Browser.mobile }).setView(center, 2);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -225,7 +225,7 @@ var daniaPopup =  "<div class='city-container'>"+
                     "   </p>"+
                     "</div>";
 
-francjaMarker.bindPopup(francjaPopup).openPopup();
+francjaMarker.bindPopup(francjaPopup);
 newZealandMarker.bindPopup(newZealandPopup);
 polandMarker.bindPopup(polandPopup);
 singapurMarker.bindPopup(singapurPopup);
