@@ -1,27 +1,4 @@
 
-var weddingDate = new Date("Jul 9, 2022 16:00:00").getTime();
-
-var counter = setInterval(function () {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-    var distance = weddingDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerHTML = getWithZero(days);
-    document.getElementById("hours").innerHTML = getWithZero(hours);
-    document.getElementById("minutes").innerHTML = getWithZero(minutes);
-    document.getElementById("seconds").innerHTML =  getWithZero(seconds);
-
-    if (distance < 0) {
-        clearInterval(counter);
-        document.getElementById("counter").innerHTML = "JUST MARRIED";
-    }
-}, 1000);
-
 var center = [52.280, 21.200]
 
 var map = L.map('mapid', { dragging: !L.Browser.mobile }).setView(center, 12);

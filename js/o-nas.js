@@ -10,12 +10,12 @@ var szwecja = [55.5712736,12.9460962];
 var malta = [35.9426466,14.2382668];
 var grecja = [37.9908997,23.70332];
 var austria = [48.220778,16.3100205];
-var germany = [51.0968655,5.9692252];
-var italy = [41.2118952,8.2239023];
+var germany = [50.1213479,8.496482];
+var italy = [45.4046987,12.2472506];
 var andora = [42.5423883,1.5276535];
-var spain = [40.1301633,-8.2016125];
+var spain = [40.4381311,-3.8196194];
 var sanMarino = [43.9429344,12.4250739];
-var china = [34.4560272,86.0832198];
+var china = [39.9375346,115.837023];
 var czechy = [49.8001306,14.3539628];
 var dania = [55.6711876,12.4537421];
 
@@ -55,36 +55,36 @@ var francjaPopup =  "<div class='city-container'>"+
                     "       Francja"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Francja.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Chamourse: miejsce szczególne w naszej pamięci, tam się poznaliśmy. #ktoś przegrał zakład - Magda :) <br>Toulouse <br>Carcassonne"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Chamourse: miejsce szczególne w naszej pamięci, tam się poznaliśmy. #ktoś przegrał zakład - Magda :) <br>Toulouse <br>Carcassonne"+
+                    // "   </p>"+
                     "</div>";
 var newZealandPopup = "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Nowa Zelandia"+    
                     "   </h3>"+
                     "   <img src='img/our-story/NowaZelandia.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Podróż do której często wracamy myślami. Miejsce do którego jeszcze raz przylecimy by dalej eksplorować świat kiwi i All Blacks  #namiot #piękne gwiazdy #cudne widoki."+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Podróż do której często wracamy myślami. Miejsce do którego jeszcze raz przylecimy by dalej eksplorować świat kiwi i All Blacks  #namiot #piękne gwiazdy #cudne widoki."+
+                    // "   </p>"+
                     "</div>";
 var polandPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Polska"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Polska.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Józefów - Poznań<br>Kraków 06'2017<br>Jantar wazny 02'2020<br>Ruś Mała drugi dom <br>"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Józefów - Poznań<br>Kraków 06'2017<br>Jantar wazny 02'2020<br>Ruś Mała drugi dom <br>"+
+                    // "   </p>"+
                     "</div>";
 var singapurPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Singapur"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Singapur.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   #zakazy<br>#nowoczesność"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   #zakazy<br>#nowoczesność"+
+                    // "   </p>"+
                     "</div>";
 
 var malezjaPopup =  "<div class='city-container'>"+
@@ -92,27 +92,27 @@ var malezjaPopup =  "<div class='city-container'>"+
                     "       Malezja"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Malezja.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   "+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   "+
+                    // "   </p>"+
                     "</div>";
 var tajwanPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Tajwan"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Tajwan.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Nasza pierwsza podróż do Azji, jedzenie ryzu pałeczkami tak, ze nam zdjecia tubylcy robili. Wspaniałe doświadcenie, zakochalismy sie w nocnych marketach, klimacie podrózy z plecakami. #Bubble Tea #nocne markety"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Nasza pierwsza podróż do Azji, jedzenie ryzu pałeczkami tak, ze nam zdjecia tubylcy robili. Wspaniałe doświadcenie, zakochalismy sie w nocnych marketach, klimacie podrózy z plecakami. #Bubble Tea #nocne markety"+
+                    // "   </p>"+
                     "</div>";
 var katarPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Katar"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Katar.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Doha<br>#gorąco"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Doha<br>#gorąco"+
+                    // "   </p>"+
                     "</div>";
 
 var szwecjaPopup =  "<div class='city-container'>"+
@@ -120,36 +120,36 @@ var szwecjaPopup =  "<div class='city-container'>"+
                     "       Szwecja"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Szwecja.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Malmo<br>Lund"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Malmo<br>Lund"+
+                    // "   </p>"+
                     "</div>";
 var maltaPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Malta"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Malta.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   "+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   "+
+                    // "   </p>"+
                     "</div>";
 var grecjaPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Grecja"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Grecja.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Ateny<br>Wolos<br>Sporady:Skiatos,Skotelos, Alonisos"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Ateny<br>Wolos<br>Sporady:Skiatos,Skotelos, Alonisos"+
+                    // "   </p>"+
                     "</div>";
 var austriaPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Austria"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Austria.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Bad Gastein<br>Saltzburg"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Bad Gastein<br>Saltzburg"+
+                    // "   </p>"+
                     "</div>";
 
 var niemcyPopup =  "<div class='city-container'>"+
@@ -157,72 +157,72 @@ var niemcyPopup =  "<div class='city-container'>"+
                     "       Niemcy"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Niemcy.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Drezno: Jarmark świąteczny<br>Monachium"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Drezno: Jarmark świąteczny<br>Monachium"+
+                    // "   </p>"+
                     "</div>";
 var italyPopup =    "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Włochy"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Wlochy.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Bolonia<br>Verona<br>Rimini<br>Florencja<br>Wenecja"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Bolonia<br>Verona<br>Rimini<br>Florencja<br>Wenecja"+
+                    // "   </p>"+
                     "</div>";
 var andoraPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Andora"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Andora.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   "+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   "+
+                    // "   </p>"+
                     "</div>";
 var spainPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Hiszpania"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Hiszpania.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Barcelona<br>Walencja<br>Girona<br>Madryt<br>Segovia"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Barcelona<br>Walencja<br>Girona<br>Madryt<br>Segovia"+
+                    // "   </p>"+
                     "</div>";
 var sanMarinoPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       San Marino"+    
                     "   </h3>"+
                     "   <img src='img/our-story/SanMarino.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   "+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   "+
+                    // "   </p>"+
                     "</div>";
 var chinaPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
-                    "       China"+    
+                    "       Chiny"+    
                     "   </h3>"+
                     "   <img src='img/our-story/China.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Pekin: nie spędziliśmy tutaj dużo czasu ale te kilkanaście godzin dało nam możliwośc poczucia miejsca, rezimu"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Pekin: nie spędziliśmy tutaj dużo czasu ale te kilkanaście godzin dało nam możliwośc poczucia miejsca, rezimu"+
+                    // "   </p>"+
                     "</div>";
 var czechyPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Czechy"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Czechy.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   kilkukrotnie byliśmy na nartkach z epiką"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   kilkukrotnie byliśmy na nartkach z epiką"+
+                    // "   </p>"+
                     "</div>";
 var daniaPopup =  "<div class='city-container'>"+
                     "   <h3 class='city-name'>"+
                     "       Dania"+    
                     "   </h3>"+
                     "   <img src='img/our-story/Dania.JPG' alt='italy' class='city-img'>"+
-                    "   <p class='city-description'>"+
-                    "   Kopenhaga #zimno"+
-                    "   </p>"+
+                    // "   <p class='city-description'>"+
+                    // "   Kopenhaga #zimno"+
+                    // "   </p>"+
                     "</div>";
 
 francjaMarker.bindPopup(francjaPopup);
