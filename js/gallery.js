@@ -41,8 +41,6 @@ function init(images) {
                 h: this.height
             });
         }
-
-
     }
 }
 

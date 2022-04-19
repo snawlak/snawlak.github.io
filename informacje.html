@@ -12,7 +12,12 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="" />
+  <link rel="stylesheet" href="css/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="css/photoswipe/default-skin.css">
   <link rel="icon" href="img/wedding-couple.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -90,35 +95,91 @@
     </div>
   </section>
 
+  <section id="gallery">
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu-tables">
+    <div class="container">
+      <div class="row photo-list" id="gallery-list">
+        <div class='col-6'>
+          <button onclick="initGallery(0)">
+            <img src='img/menu.png' alt='team-pick-img' style='width: 100%; height: auto;'>
+          </button>
+        </div>
+        <div class='col-6'>
+          <button onclick="initGallery(1)">
+            <img src='img/tables.png' alt='team-pick-img' style='width: 100%; height: auto;'>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="map-section">
     <div id="mapid"></div>
   </section>
 
   <section id="kontakt">
     <div class="container">
-        <div class="kontakt-box row">
-            <h1>Kontakt</h1>
-            <p>Bardzo prosimy o potwierdzenie obecności do 31 maja.</p>
-            <P>W razie jakichkolwiek pytań - zadzwoń.</P>
-            <br>
-            <div class="phone-box col-12 col-sm-6">
-                <img src="img/bride-64.png" alt="" class="d-inline-block">
-                <div class="phone-box-label">
-                    <p>Magdalena Tobiasz</p>
-                    <p><a href="tel:+48603189169">+48 603 189 169</a></p>
-                </div>
-            </div>
-            <div class="phone-box col-12 col-sm-6">
-                <img src="img/groom-64.png" alt="">
-                <div class="phone-box-label">
-                    <p>Jakub Pawlak</p>
-                    <p><a href="tel:+48791715666">+48 791 715 666</a></p>
-                </div>
-
-            </div>
+      <div class="kontakt-box row">
+        <h1>Kontakt</h1>
+        <p>Bardzo prosimy o potwierdzenie obecności do 31 maja.</p>
+        <P>W razie jakichkolwiek pytań - zadzwoń.</P>
+        <br>
+        <div class="phone-box col-12 col-sm-6">
+          <img src="img/bride-64.png" alt="" class="d-inline-block">
+          <div class="phone-box-label">
+            <p>Magdalena Tobiasz</p>
+            <p><a href="tel:+48603189169">+48 603 189 169</a></p>
+          </div>
         </div>
+        <div class="phone-box col-12 col-sm-6">
+          <img src="img/groom-64.png" alt="">
+          <div class="phone-box-label">
+            <p>Jakub Pawlak</p>
+            <p><a href="tel:+48791715666">+48 791 715 666</a></p>
+          </div>
+
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
@@ -135,6 +196,9 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script src="js/photoswipe/photoswipe.min.js"></script>
+  <script src="js/informacje.js"></script>
 
 
 </body>

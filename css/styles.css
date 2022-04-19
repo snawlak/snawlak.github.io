@@ -1,9 +1,10 @@
 /* nav */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Amatic SC', cursive !important;
 }
 
 .navbar {
+  font-family: 'Lato', sans-serif;
   padding: 1em 1.4em !important;
 }
 
@@ -88,13 +89,11 @@ body {
 
 #home .main-text {
   margin: 0 auto 16em auto;
-  font-family: 'Lato', sans-serif;
   text-align: center;
 }
 
 #home .main-text h1 {
   color: #fff;
-  font-family: 'Lato', sans-serif;
   font-size: 2.5em;
   font-weight: 600;
   text-transform: uppercase;
@@ -103,7 +102,6 @@ body {
 
 #home .main-text h3 {
   color: #fff;
-  font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   font-weight: 400;
   margin-bottom: 45px;
@@ -122,7 +120,6 @@ body {
 
 /* calendar card */
 #calendar {
-  font-family: 'Poppins', sans-serif;
   position: relative;
   margin-top: -50px;
   /* width: 70%; */
@@ -222,7 +219,6 @@ body {
 }
 
 #info .info-one h2 {
-  font-family: 'Lato', sans-serif;
   font-weight: 600;
   /* margin: 20px 0 15px 0; */
   text-transform: uppercase;
@@ -276,7 +272,6 @@ body {
 
 
 .kontakt-box p {
-  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   /* text-align: center; */
   font-size: 1em;
@@ -319,7 +314,6 @@ body {
 }
 
 #add-photo .add-photo-box h1 {
-  font-family: 'Lato', sans-serif;
   font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 1em;
@@ -329,14 +323,12 @@ body {
 }
 
 #add-photo .add-photo-box p {
-  font-family: 'Lato', sans-serif;
   font-size: 1.4em;
   float: left;
   text-align: left;
 }
 
 #add-photo .add-photo-box .add-button {
-  font-family: 'Lato', sans-serif;
   font-size: 1.8em;
   padding: 0.6em 1em;
   font-weight: 500;
@@ -359,12 +351,11 @@ body {
 
 #gallery{
   /* display: none; */
-  font-family: 'Lato', sans-serif;
   margin: 20px;
   
 }
 
-#photo-list {
+#photo-list, #menu-tables {
   text-align: center;
 }
 
@@ -394,6 +385,38 @@ body {
 #photo-list .photo-list li img {
   border-radius: 8px;
 }
+
+#menu-tables {
+  text-align: center;
+}
+
+#menu-tables h1 {
+  text-align: left;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 1em auto;
+}
+
+#menu-tables .photo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-tables .photo-list div {
+  /* margin: 10px; */
+  margin: 10px 0;
+}
+
+#menu-tables .photo-list div button {
+  border: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+#menu-tables .photo-list div img {
+  border-radius: 8px;
+}
+
 
 /* Add photo popup */
 
@@ -508,7 +531,6 @@ body {
 
 #add-photo-popup .send-button {
   display: block;
-  font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   padding: 0.2em 1.6em;
   font-weight: 500;
@@ -587,6 +609,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); 
 } 
+
 
 .popup-container {
   padding: 1em auto;

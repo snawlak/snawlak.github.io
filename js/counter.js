@@ -1,4 +1,4 @@
-var weddingDate = new Date("Jul 9, 2021 16:00:00").getTime();
+var weddingDate = new Date("Jul 9, 2022 16:00:00").getTime();
 
 var counter = setInterval(function () {
 
