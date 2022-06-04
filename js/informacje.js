@@ -3,11 +3,21 @@ var imgItems = [
         src: 'img/menu.png',
         w: 600,
         h: 800
-    }, 
+    },
     {
         src: 'img/tables.png',
         w: 600,
         h: 800
+    },
+    {
+        src: 'img/Parking-church.png',
+        w: 905,
+        h: 895
+    },
+    {
+        src: 'img/parking-wedding.png',
+        w: 809,
+        h: 821
     }
 
 ];

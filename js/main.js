@@ -13,40 +13,51 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var weddingMarker = L.marker([52.315915, 21.1942092]).addTo(map);
 var churchMarker = L.marker([52.2343208, 21.2064346]).addTo(map);
-var weddingPopup = "<h4><b>Dom Weselny 'Zamkowa'</b></h4>" + 
-        "<h6>Kasprzykiewicza 81, 05-200 Leśniakowizna</h6>" +
-        "<a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'><h6>Otwórz w Google Maps</h6></a>";
-// var churchPopup = "<img src='img/church-pic.jpg' class='city-img'>"
-//         "<h4><b>Parafia Najśw. Serca Pana Jezusa w Starej Miłosnej</b></h4>"+
-//         "<h6><br>Jana Pawła II 8/10, 05-077 Warszawa<br></h6>" +
-//         "<a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'><h6>Otwórz w Google Maps</h6></a>";
 
-var weddingPopup = "<div class='popup-container'>"+
-                    "   <h3 class='popup-name'>"+
-                    "       Sala Weselna"+    
-                    "   </h3>"+
-                    "   <img src='img/zamkowa.jpg' alt='italy' class='popup-img'>"+
-                    "   <p class='popup-description'>"+
-                    "   Dom Weselny 'Zamkowa'<br>Kasprzykiewicza 81, 05-200 Leśniakowizna<br>"+
-                    "   </p>"+
-                    "<a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'><h6>Otwórz w Google Maps</h6></a>" +
-                    "<a target='_blank' href='https://wesele-zamkowa.pl/'><h6>Otwórz stronę internetową</h6></a>" +
-                    "</div>";
+var weddingPopup = "<div class='popup-container'>" +
+    "   <h3 class='popup-name'>" +
+    "       Sala Weselna" +
+    "   </h3>" +
+    "   <img src='img/zamkowa.jpg' alt='italy' class='popup-img'>" +
+    "   <p class='popup-description'>" +
+    "   Dom Weselny 'Zamkowa'<br>ul. Kasprzykiewicza 81, 05-200 Leśniakowizna<br>" +
+    "   </p>" +
+    "<a target='_blank' href='https://goo.gl/maps/tapUjYaT3NKuEG8V7'><h6>Otwórz w Google Maps</h6></a>" +
+    "<a target='_blank' href='https://wesele-zamkowa.pl/'><h6>Otwórz stronę internetową</h6></a>" +
+    "</div>";
 
-var churchPopup = "<div class='popup-container'>"+
-                    "   <h3 class='popup-name'>"+
-                    "       Ceremonia Ślubna"+    
-                    "   </h3>"+
-                    "   <img src='img/church-pic.jpg' alt='italy' class='popup-img'>"+
-                    "   <p class='popup-description'>"+
-                    "   Parafia Najśw. Serca Pana Jezusa w Starej Miłosnej<br>Jana Pawła II 8/10, 05-077 Warszawa<br>"+
-                    "   </p>"+
-                    "<a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'><h6>Otwórz w Google Maps</h6></a>" +
-                    "</div>";
-weddingMarker.bindPopup(weddingPopup).openPopup();
+var churchPopup = "<div class='popup-container'>" +
+    "   <h3 class='popup-name'>" +
+    "       Ceremonia Ślubna" +
+    "   </h3>" +
+    "   <img src='img/church-pic.jpg' alt='italy' class='popup-img'>" +
+    "   <p class='popup-description'>" +
+    "   Parafia Najśw. Serca Pana Jezusa w Starej Miłosnej<br>ul. Jana Pawła II 8/10, 05-077 Warszawa<br>" +
+    "   </p>" +
+    "<a target='_blank' href='https://goo.gl/maps/ATj38ndE9Auu4R729'><h6>Otwórz w Google Maps</h6></a>" +
+    "</div>";
+weddingMarker.bindPopup(weddingPopup)
 churchMarker.bindPopup(churchPopup).openPopup();
 
 function getWithZero(value) {
     return value < 10 ? "0" + value : value
 }
+
+if (navigator.userAgentData.mobile) {
+    var legend = L.control({ position: 'topright' });
+    legend.onAdd = function (map) {
+    
+        var div = L.DomUtil.create('div', 'map-info');
+        labels = ['Poruszanie mapy za pomocą dwóch palców.'],
+        
+    
+        
+        div.innerHTML = labels.join('<br>');
+        return div;
+    };
+    legend.addTo(map);
+}
+
+
+
 

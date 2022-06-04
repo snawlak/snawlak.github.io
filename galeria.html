@@ -32,11 +32,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="o-nas.html" title="ONas">
               O nas
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="informacje.html" title="Informacje">
               Informacje
@@ -62,10 +62,10 @@
     <div class="container">
       <div class="add-photo-box col-sm-10 col-12 col-md-6">
         <h1>Dodaj zdjęcie</h1>
-        <br>
+        <!-- <br> -->
         <p>Baw się razem z nami!</p>
-        <p>Wybierz Twoje wyjątkowe zdjęcia ze ślubu i wesela. Dodaj je tutaj i przeglądaj</p>
-        <button class="add-button" onclick="showPopup()">Dodaj zdjęcia</button>
+        <p>Wybierz Twoje wyjątkowe zdjęcia ze ślubu, wesela i poprawin. Dodaj je tutaj i przeglądaj.</p>
+        <button class="add-button shadow" onclick="showPopup()">Dodaj zdjęcie</button>
       </div>
     </div>
   </section>
@@ -114,9 +114,8 @@
     <div class="container">
       <div class="popup col-sm-10 col-md-8 col-12 col-lg-4">
         <div class="popup-content" id="popup-content">
-          <h2>Dodaj zdjęcia</h2>
-          <p>Przy dodawaniu staraj się dodać zdjęcie z jednej kategorii (ślub lub wesele). Zaznacz odpowiedni box.
-            Pozwoli to nam lepiej posortować zdjęcia</p>
+          <h2>Dodaj zdjęcie</h2>
+          <p>Przy dodawaniu zdjęcia wybierz odpowiednią kategorię. Pozwoli to nam lepiej posortować zdjęcia. Zdjęcie było robione podczas...?</p>
           <form action="http://slubmagdyikuby.pl/send-img.php" method="post" enctype="multipart/form-data"
             id="pic-form">
             <label class="check-box">Ślub
@@ -127,9 +126,13 @@
               <input type="radio" checked="checked" name="type" value="wedding" id="wedding">
               <span class="checkmark"></span>
             </label>
-            <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg, image/JPG" multiple="multiple"
+            <label class="check-box">Poprawiny
+              <input type="radio" checked="checked" name="type" value="zaftermath" id="zaftermath">
+              <span class="checkmark"></span>
+            </label>
+            <input type="file" id="myFile" name="filename" accept="image/png, image/jpeg, image/JPG"
               class="attach-files">
-            <input type="submit" value="Wyślij" class="send-button" onclick="sendImages()">
+            <input type="submit" value="Wyślij" class="send-button shadow" onclick="sendImages()">
           </form>
         </div>
         <div class="files-loading" id="files-loading">
